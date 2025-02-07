@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de Température</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur de Température</h1>
+        <div class="converter">
+            <label for="temperature">Entrez la température :</label>
+            <input type="number" id="temperature" placeholder="Valeur en °C">
+            
+            <label for="conversion">Convertir en :</label>
+            <select id="conversion">
+                <option value="fahrenheit">Fahrenheit (°F)</option>
+                <option value="kelvin">Kelvin (K)</option>
+            </select>
+            
+            <button id="convert-btn">Convertir</button>
+            <button id="reset-btn">Réinitialiser</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Résultat :</h2>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
